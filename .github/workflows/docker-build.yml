@@ -1,14 +1,14 @@
-name: Node Github Action Docker Image
+name: Node Github Action Docker Image  #name of workflow
 
 on:
-  push:
+  push:   #Events on repo branches to trigger workflow
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
 jobs:
-  build-and-push:
-    runs-on: ubuntu-latest
+  build-and-push:  #job to build and push docker image - job contains multiple steps
+    runs-on: ubuntu-latest   #ubuntu OS 
 
     steps:
     - name: Checkout code

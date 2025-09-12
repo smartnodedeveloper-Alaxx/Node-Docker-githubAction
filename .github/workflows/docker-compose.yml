@@ -1,0 +1,33 @@
+name: MySQL Docker For Github Action Testing
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-mysql:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Compose file
+        run: |
+          cat <<EOF > docker-compose.yml
+          version: '3.8'
+          services:
+            mysql-db:
+              image: mysql:8.0
+              container_name: mysql-db
+              environment:
+                MYSQL_ROOT_PASSWORD: root
+                MYSQL_DATABASE: testdb
+                MYSQL_USER: root
+                MYSQL_PASSWORD: root
+              ports:
+                - "3306:3306"
+          EOF
+
+      - name: Start MySQL with Docker Compose
+        run: docker-compose up -d
