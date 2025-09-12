@@ -1,0 +1,30 @@
+{
+  "name": "node-docker-githubaction",
+  "version": "1.0.0",
+  "description": "This is demo repo and nodejs simple project to practice the github action and docker image creation automation",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start":"node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartnodedeveloper-Alaxx/Node-Docker-githubAction.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smartnodedeveloper-Alaxx/Node-Docker-githubAction/issues"
+  },
+  "homepage": "https://github.com/smartnodedeveloper-Alaxx/Node-Docker-githubAction#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.5",
+    "nodemon": "^3.1.10",
+    "sequelize": "^6.37.7"
+  }
+}
