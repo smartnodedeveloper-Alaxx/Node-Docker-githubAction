@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Echo Hello World') {
             steps {
-                echo 'Hello World - Second trigger for jenkins to test! updated'
+                echo 'Hello World - Second trigger for jenkins to test! generic webhook trail'
             }
         }
     }
