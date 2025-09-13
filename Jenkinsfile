@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Echo Hello World') {
             steps {
-                echo 'Hello World - Second trigger for jenkins to test!'
+                echo 'Hello World - Second trigger for jenkins to test! updated'
             }
         }
     }
