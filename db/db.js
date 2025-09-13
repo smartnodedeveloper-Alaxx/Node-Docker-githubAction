@@ -17,15 +17,15 @@ const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, proces
     }
 });
 
-const connectWithRetry = () => {
-    return sequelize.authenticate()
-        .then(() => console.log("Database connected..."))
-        .catch(err => {
-            console.error("DB Connection Error: ", err);
-            setTimeout(connectWithRetry, 5000); 
-        });
-};
+// const connectWithRetry = () => {
+//     return sequelize.authenticate()
+//         .then(() => console.log("Database connected..."))
+//         .catch(err => {
+//             console.error("DB Connection Error: ", err);
+//             setTimeout(connectWithRetry, 5000); 
+//         });
+// };
 
-connectWithRetry();
+// connectWithRetry();
 
 module.exports = sequelize;

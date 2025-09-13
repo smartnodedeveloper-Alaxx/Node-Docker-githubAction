@@ -34,12 +34,12 @@ app.use('/api',indexRouter)
 console.log("Routes configured.");
 
 
-syncDB().then(() => {
-    console.log("Database synced successfully.");
+// syncDB().then(() => {
+//     console.log("Database synced successfully.");
     
-}).catch(err => {
-    console.error("Error syncing database:", err);
-});
+// }).catch(err => {
+//     console.error("Error syncing database:", err);
+// });
 
 app.listen(9000,()=>{
     console.log(`Server is running on port ${port}!`)
