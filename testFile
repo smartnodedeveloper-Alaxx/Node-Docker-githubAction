@@ -1,2 +1,5 @@
 Updated Webhook in docker
 Updated jenkins url in system configuration
+
+
+nginx configured - and using ngnix as reverse proxy for docker to access jenkins job
