@@ -26,7 +26,7 @@ const indexRouter = require('./routers/index.routes')
 
 app.get("/test", (req, res) => {
     console.log("/test hit");
-    res.status(200).send("API is working fine! updated!");
+    res.status(200).send("API is working fine! Jenkins webhook trigger worked!");
 });
 
 app.use('/api',indexRouter)

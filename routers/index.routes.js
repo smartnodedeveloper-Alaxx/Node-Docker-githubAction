@@ -5,6 +5,5 @@ const userRoutes = require('./user.routes')
 
 router.use('/v1',userRoutes)
 
-
 module.exports = router
 
