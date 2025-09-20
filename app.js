@@ -26,7 +26,7 @@ const indexRouter = require('./routers/index.routes')
 
 app.get("/test", (req, res) => {
     console.log("/test hit");
-    res.status(200).send("Hello World");
+    res.status(200).send("API is working fine! updated!");
 });
 
 app.use('/api',indexRouter)
